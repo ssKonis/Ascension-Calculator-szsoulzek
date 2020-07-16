@@ -1,0 +1,769 @@
+	Druid|Balance|
+Starlight Wrath|1|0|
+Genesis|2|0|
+Moonglow|0|1|
+Nature's Majesty|1|1|
+Improved Moonfire|3|1|
+Brambles|0|2|
+Nature's Grace|1|2|
+Nature's Splendor|2|2|
+Nature's Reach|3|2|
+Vengeance|1|3|
+Celestial Focus|2|3|
+Lunar Guidance|0|4|
+Insect Swarm|1|4|
+Improved Insect Swarm|2|4|
+Dreamstate|0|5|
+Moonfury|1|5|
+Balance of Power|2|5|
+Moonkin Form|1|6|
+Improved Moonkin Form|2|6|
+Improved Faerie Fire|3|6|
+Owlkin Frenzy|0|7|
+Wrath of Cenarius|2|7|
+Eclipse|0|8|
+Typhoon|1|8|
+Force of Nature|2|8|
+Gale Winds|3|8|
+Earth and Moon|1|9|
+Starfall|1|10|
+	Druid|Feral|
+Ferocity|1|0|
+Feral Aggression|2|0|
+Feral Instinct|0|1|
+Savage Fury|1|1|
+Thick Hide|2|1|
+Feral Swiftness|0|2|
+Survival Instincts|1|2|
+Sharpened Claws|2|2|
+Shredding Attacks|0|3|
+Predatory Strikes|1|3|
+Primal Fury|2|3|
+Primal Precision|3|3|
+Brutal Impact|0|4|
+Feral Charge|2|4|
+Nurturing Instinct|3|4|
+Natural Reaction|0|5|
+Heart of the Wild|1|5|
+Survival of the Fittest|2|5|
+Leader of the Pack|1|6|
+Improved Leader of the Pack|2|6|
+Primal Tenacity|3|6|
+Protector of the Pack|0|7|
+Predatory Instincts|2|7|
+Infected Wounds|3|7|
+King of the Jungle|0|8|
+Mangle|1|8|
+Improved Mangle|2|8|
+Rend and Tear|1|9|
+Primal Gore|2|9|
+Berserk|1|10|
+	Druid|Restoration|
+Improved Mark of the Wild|0|0|
+Nature's Focus|1|0|
+Furor|2|0|
+Naturalist|0|1|
+Subtlety|1|1|
+Natural Shapeshifter|2|1|
+Intensity|0|2|
+Omen of Clarity|1|2|
+Master Shapeshifter|2|2|
+Tranquil Spirit|1|3|
+Improved Rejuvenation|2|3|
+Natural Alacrity|0|4|
+Gift of Nature|1|4|
+Improved Tranquility|3|4|
+Empowered Touch|0|5|
+Nature's Bounty|2|5|
+Living Spirit|0|6|
+Swiftmend|1|6|
+Natural Perfection|2|6|
+Empowered Rejuvenation|1|7|
+Living Seed|2|7|
+Revitalize|0|8|
+Tree of Life|1|8|
+Improved Tree of Life|2|8|
+Improved Barkskin|0|9|
+Gift of the Earthmother|2|9|
+Wild Growth|1|10|
+	Hunter|BeastMastery|
+Improved Aspect of the Hawk|1|0|
+Endurance Training|2|0|
+Focused Fire|0|1|
+Improved Aspect of the Monkey|1|1|
+Thick Hide|2|1|
+Improved Revive Pet|3|1|
+Pathfinding|0|2|
+Aspect Mastery|1|2|
+Unleashed Fury|2|2|
+Improved Mend Pet|1|3|
+Ferocity|2|3|
+Spirit Bond|0|4|
+Intimidation|1|4|
+Bestial Discipline|3|4|
+Animal Handler|0|5|
+Frenzy|2|5|
+Ferocious Inspiration|0|6|
+Bestial Wrath|1|6|
+Catlike Reflexes|2|6|
+Invigoration|0|7|
+Serpent's Swiftness|2|7|
+Longevity|0|8|
+The Beast Within|1|8|
+Cobra Strikes|2|8|
+Kindred Spirits|1|9|
+Beast Mastery|1|10|
+	Hunter|Marksmanship|
+Improved Concussive Shot|0|0|
+Focused Aim|1|0|
+Lethal Shots|2|0|
+Careful Aim|0|1|
+Improved Hunter's Mark|1|1|
+Mortal Shots|2|1|
+Go for the Throat|0|2|
+Improved Arcane Shot|1|2|
+Aimed Shot|2|2|
+Rapid Killing|3|2|
+Improved Stings|1|3|
+Efficiency|2|3|
+Concussive Barrage|0|4|
+Readiness|1|4|
+Barrage|2|4|
+Combat Experience|0|5|
+Ranged Weapon Specialization|3|5|
+Piercing Shots|0|6|
+Trueshot Aura|1|6|
+Improved Barrage|2|6|
+Master Marksman|1|7|
+Rapid Recuperation|2|7|
+Wild Quiver|0|8|
+Silencing Shot|1|8|
+Improved Steady Shot|2|8|
+Marked for Death|1|9|
+Chimera Shot|1|10|
+	Hunter|Survival|
+Improved Tracking|0|0|
+Hawk Eye|1|0|
+Savage Strikes|2|0|
+Surefooted|0|1|
+Entrapment|1|1|
+Trap Mastery|2|1|
+Survival Instincts|3|1|
+Survivalist|0|2|
+Scatter Shot|1|2|
+Deflection|2|2|
+Survival Tactics|3|2|
+T.N.T.|1|3|
+Lock and Load|3|3|
+Hunter vs. Wild|0|4|
+Killer Instinct|1|4|
+Counterattack|2|4|
+Lightning Reflexes|0|5|
+Resourcefulness|2|5|
+Expose Weakness|0|6|
+Wyvern Sting|1|6|
+Thrill of the Hunt|2|6|
+Master Tactician|0|7|
+Noxious Stings|1|7|
+Point of No Escape|0|8|
+Black Arrow|1|8|
+Sniper Training|3|8|
+Hunting Party|2|9|
+Explosive Shot|1|10|
+	Mage|Arcane|
+Arcane Subtlety|0|0|
+Arcane Focus|1|0|
+Arcane Stability|2|0|
+Arcane Fortitude|0|1|
+Magic Absorption|1|1|
+Arcane Concentration|2|1|
+Magic Attunement|0|2|
+Spell Impact|1|2|
+Student of the Mind|2|2|
+Focus Magic|3|2|
+Arcane Shielding|0|3|
+Improved Counterspell|1|3|
+Arcane Meditation|2|3|
+Torment the Weak|3|3|
+Improved Blink|0|4|
+Presence of Mind|1|4|
+Arcane Mind|3|4|
+Prismatic Cloak|0|5|
+Arcane Instability|1|5|
+Arcane Potency|2|5|
+Arcane Empowerment|0|6|
+Arcane Power|1|6|
+Incanter's Absorption|2|6|
+Arcane Flows|1|7|
+Mind Mastery|2|7|
+Slow|1|8|
+Missile Barrage|2|8|
+Netherwind Presence|1|9|
+Spell Power|2|9|
+Arcane Barrage|1|10|
+	Mage|Fire|
+Improved Fire Blast|0|0|
+Incineration|1|0|
+Improved Fireball|2|0|
+Ignite|0|1|
+Burning Determination|1|1|
+World in Flames|2|1|
+Flame Throwing|0|2|
+Impact|1|2|
+Pyroblast|2|2|
+Burning Soul|3|2|
+Improved Scorch|0|3|
+Molten Shields|1|3|
+Master of Elements|3|3|
+Playing with Fire|0|4|
+Critical Mass|1|4|
+Blast Wave|2|4|
+Blazing Speed|0|5|
+Fire Power|2|5|
+Pyromaniac|0|6|
+Combustion|1|6|
+Molten Fury|2|6|
+Fiery Payback|0|7|
+Empowered Fire|2|7|
+Firestarter|0|8|
+Dragon's Breath|1|8|
+Hot Streak|2|8|
+Burnout|1|9|
+Living Bomb|1|10|
+	Mage|Frost|
+Frostbite|0|0|
+Improved Frostbolt|1|0|
+Ice Floes|2|0|
+Ice Shards|0|1|
+Frost Warding|1|1|
+Precision|2|1|
+Permafrost|3|1|
+Piercing Ice|0|2|
+Icy Veins|1|2|
+Improved Blizzard|2|2|
+Arctic Reach|0|3|
+Frost Channeling|1|3|
+Shatter|2|3|
+Cold Snap|1|4|
+Improved Cone of Cold|2|4|
+Frozen Core|3|4|
+Cold as Ice|0|5|
+Winter's Chill|2|5|
+Shattered Barrier|0|6|
+Ice Barrier|1|6|
+Arctic Winds|2|6|
+Empowered Frostbolt|1|7|
+Fingers of Frost|2|7|
+Brain Freeze|0|8|
+Summon Water Elemental|1|8|
+Enduring Winter|2|8|
+Chilled to the Bone|1|9|
+Deep Freeze|1|10|
+	Paladin|Holy|
+Spiritual Focus|1|0|
+Seals of the Pure|2|0|
+Healing Light|0|1|
+Divine Intellect|1|1|
+Unyielding Faith|2|1|
+Aura Mastery|0|2|
+Illumination|1|2|
+Improved Lay on Hands|2|2|
+Improved Concentration Aura|0|3|
+Improved Blessing of Wisdom|2|3|
+Blessed Hands|3|3|
+Pure of Heart|0|4|
+Divine Favor|1|4|
+Sanctified Light|2|4|
+Purifying Power|0|5|
+Holy Power|2|5|
+Light's Grace|0|6|
+Holy Shock|1|6|
+Blessed Life|2|6|
+Sacred Cleansing|0|7|
+Holy Guidance|2|7|
+Divine Illumination|0|8|
+Judgements of the Pure|2|8|
+Infusion of Light|1|9|
+Enlightened Judgements|2|9|
+Beacon of Light|1|10|
+	Paladin|Protection|
+Divinity|1|0|
+Divine Strength|2|0|
+Stoicism|0|1|
+Guardian's Favor|1|1|
+Anticipation|2|1|
+Divine Sacrifice|0|2|
+Improved Righteous Fury|1|2|
+Toughness|2|2|
+Divine Guardian|0|3|
+Improved Hammer of Justice|1|3|
+Improved Devotion Aura|2|3|
+Blessing of Sanctuary|1|4|
+Reckoning|2|4|
+Sacred Duty|0|5|
+One-Handed Weapon Specialization|2|5|
+Spiritual Attunement|0|6|
+Holy Shield|1|6|
+Ardent Defender|2|6|
+Redoubt|0|7|
+Combat Expertise|2|7|
+Touched by the Light|0|8|
+Avenger's Shield|1|8|
+Guarded by the Light|2|8|
+Shield of the Templar|1|9|
+Judgements of the Just|2|9|
+Hammer of the Righteous|1|10|
+	Paladin|Retribution|
+Deflection|1|0|
+Benediction|2|0|
+Improved Judgements|0|1|
+Heart of the Crusader|1|1|
+Improved Blessing of Might|2|1|
+Vindication|0|2|
+Conviction|1|2|
+Seal of Command|2|2|
+Pursuit of Justice|3|2|
+Eye for an Eye|0|3|
+Sanctity of Battle|2|3|
+Crusade|3|3|
+Two-Handed Weapon Specialization|0|4|
+Sanctified Retribution|2|4|
+Vengeance|1|5|
+Divine Purpose|2|5|
+The Art of War|0|6|
+Repentance|1|6|
+Judgements of the Wise|2|6|
+Fanaticism|1|7|
+Sanctified Wrath|2|7|
+Swift Retribution|0|8|
+Crusader Strike|1|8|
+Sheath of Light|2|8|
+Righteous Vengeance|1|9|
+Divine Storm|1|10|
+	Priest|Discipline|
+Unbreakable Will|1|0|
+Twin Disciplines|2|0|
+Silent Resolve|0|1|
+Improved Inner Fire|1|1|
+Improved Power Word: Fortitude|2|1|
+Martyrdom|3|1|
+Meditation|0|2|
+Inner Focus|1|2|
+Improved Power Word: Shield|2|2|
+Absolution|0|3|
+Mental Agility|1|3|
+Improved Mana Burn|3|3|
+Reflective Shield|0|4|
+Mental Strength|1|4|
+Soul Warding|2|4|
+Focused Power|0|5|
+Enlightenment|2|5|
+Focused Will|0|6|
+Power Infusion|1|6|
+Improved Flash Heal|2|6|
+Renewed Hope|0|7|
+Rapture|1|7|
+Aspiration|2|7|
+Divine Aegis|0|8|
+Pain Suppression|1|8|
+Grace|2|8|
+Borrowed Time|1|9|
+Penance|1|10|
+	Priest|Holy|
+Healing Focus|0|0|
+Improved Renew|1|0|
+Holy Specialization|2|0|
+Spell Warding|1|1|
+Divine Fury|2|1|
+Desperate Prayer|0|2|
+Blessed Recovery|1|2|
+Inspiration|3|2|
+Holy Reach|0|3|
+Improved Healing|1|3|
+Searing Light|2|3|
+Healing Prayers|0|4|
+Spirit of Redemption|1|4|
+Spiritual Guidance|2|4|
+Surge of Light|0|5|
+Spiritual Healing|2|5|
+Holy Concentration|0|6|
+Lightwell|1|6|
+Blessed Resilience|2|6|
+Body and Soul|0|7|
+Empowered Healing|1|7|
+Serendipity|2|7|
+Empowered Renew|0|8|
+Circle of Healing|1|8|
+Test of Faith|2|8|
+Divine Providence|1|9|
+Guardian Spirit|1|10|
+	Priest|Shadow|
+Spirit Tap|0|0|
+Improved Spirit Tap|1|0|
+Darkness|2|0|
+Shadow Affinity|0|1|
+Improved Shadow Word: Pain|1|1|
+Shadow Focus|2|1|
+Improved Psychic Scream|0|2|
+Improved Mind Blast|1|2|
+Mind Flay|2|2|
+Veiled Shadows|1|3|
+Shadow Reach|2|3|
+Shadow Weaving|3|3|
+Silence|0|4|
+Vampiric Embrace|1|4|
+Improved Vampiric Embrace|2|4|
+Focused Mind|3|4|
+Mind Melt|0|5|
+Improved Devouring Plague|2|5|
+Shadowform|1|6|
+Shadow Power|2|6|
+Improved Shadowform|0|7|
+Misery|2|7|
+Psychic Horror|0|8|
+Vampiric Touch|1|8|
+Pain and Suffering|2|8|
+Twisted Faith|2|9|
+Dispersion|1|10|
+	Rogue|Assassination|
+Improved Eviscerate|0|0|
+Remorseless Attacks|1|0|
+Malice|2|0|
+Ruthlessness|0|1|
+Blood Spatter|1|1|
+Puncturing Wounds|3|1|
+Vigor|0|2|
+Improved Expose Armor|1|2|
+Lethality|2|2|
+Vile Poisons|1|3|
+Improved Poisons|2|3|
+Fleet Footed|0|4|
+Cold Blood|1|4|
+Improved Kidney Shot|2|4|
+Quick Recovery|3|4|
+Seal Fate|1|5|
+Murder|2|5|
+Deadly Brew|0|6|
+Overkill|1|6|
+Deadened Nerves|2|6|
+Focused Attacks|0|7|
+Find Weakness|2|7|
+Master Poisoner|0|8|
+Mutilate|1|8|
+Turn the Tables|2|8|
+Cut to the Chase|1|9|
+Hunger For Blood|1|10|
+	Rogue|Combat|
+Improved Gouge|0|0|
+Improved Sinister Strike|1|0|
+Dual Wield Specialization|2|0|
+Improved Slice and Dice|0|1|
+Deflection|1|1|
+Precision|3|1|
+Endurance|0|2|
+Riposte|1|2|
+Close Quarters Combat|2|2|
+Improved Kick|0|3|
+Improved Sprint|1|3|
+Lightning Reflexes|2|3|
+Aggression|3|3|
+Mace Specialization|0|4|
+Blade Flurry|1|4|
+Hack and Slash|2|4|
+Weapon Expertise|1|5|
+Blade Twisting|2|5|
+Vitality|0|6|
+Adrenaline Rush|1|6|
+Nerves of Steel|2|6|
+Throwing Specialization|0|7|
+Combat Potency|2|7|
+Unfair Advantage|0|8|
+Surprise Attacks|1|8|
+Savage Combat|2|8|
+Prey on the Weak|1|9|
+Killing Spree|1|10|
+	Rogue|Subtlety|
+Relentless Strikes|0|0|
+Master of Deception|1|0|
+Opportunity|2|0|
+Sleight of Hand|0|1|
+Dirty Tricks|1|1|
+Camouflage|2|1|
+Elusiveness|0|2|
+Ghostly Strike|1|2|
+Serrated Blades|2|2|
+Setup|0|3|
+Initiative|1|3|
+Improved Ambush|2|3|
+Heightened Senses|0|4|
+Preparation|1|4|
+Dirty Deeds|2|4|
+Hemorrhage|3|4|
+Master of Subtlety|0|5|
+Deadliness|2|5|
+Enveloping Shadows|0|6|
+Premeditation|1|6|
+Cheat Death|2|6|
+Sinister Calling|1|7|
+Waylay|2|7|
+Honor Among Thieves|0|8|
+Shadowstep|1|8|
+Filthy Tricks|2|8|
+Slaughter from the Shadows|1|9|
+Shadow Dance|1|10|
+	Shaman|Elemental|
+Convection|1|0|
+Concussion|2|0|
+Call of Flame|0|1|
+Elemental Warding|1|1|
+Elemental Devastation|2|1|
+Reverberation|0|2|
+Elemental Focus|1|2|
+Elemental Fury|2|2|
+Improved Fire Nova|0|3|
+Eye of the Storm|3|3|
+Elemental Reach|0|4|
+Call of Thunder|1|4|
+Unrelenting Storm|3|4|
+Elemental Precision|0|5|
+Lightning Mastery|2|5|
+Elemental Mastery|1|6|
+Storm, Earth and Fire|2|6|
+Booming Echoes|0|7|
+Elemental Oath|1|7|
+Lightning Overload|2|7|
+Astral Shift|0|8|
+Totem of Wrath|1|8|
+Lava Flows|2|8|
+Shamanism|1|9|
+Thunderstorm|1|10|
+	Shaman|Enhancement|
+Enhancing Totems|0|0|
+Earth's Grasp|1|0|
+Ancestral Knowledge|2|0|
+Guardian Totems|0|1|
+Thundering Strikes|1|1|
+Improved Ghost Wolf|2|1|
+Improved Shields|3|1|
+Elemental Weapons|0|2|
+Shamanistic Focus|2|2|
+Anticipation|3|2|
+Flurry|1|3|
+Toughness|2|3|
+Improved Windfury Totem|0|4|
+Spirit Weapons|1|4|
+Mental Dexterity|2|4|
+Unleashed Rage|0|5|
+Weapon Mastery|2|5|
+Frozen Power|3|5|
+Dual Wield Specialization|0|6|
+Empowered Stormstrike|1|6|
+Stormstrike|2|6|
+Static Shock|0|7|
+Lava Lash|1|7|
+Improved Stormstrike|2|7|
+Mental Quickness|0|8|
+Shamanistic Rage|1|8|
+Earthen Power|2|8|
+Maelstrom Weapon|1|9|
+Feral Spirit|1|10|
+	Shaman|Restoration|
+Improved Healing Wave|1|0|
+Totemic Focus|2|0|
+Improved Reincarnation|0|1|
+Healing Grace|1|1|
+Tidal Focus|2|1|
+Improved Water Shield|0|2|
+Healing Focus|1|2|
+Tidal Force|2|2|
+Ancestral Healing|3|2|
+Restorative Totems|1|3|
+Tidal Mastery|2|3|
+Healing Way|0|4|
+Nature's Swiftness|2|4|
+Focused Mind|3|4|
+Purification|2|5|
+Nature's Guardian|0|6|
+Mana Tide Totem|1|6|
+Cleanse Spirit|2|6|
+Blessing of the Eternals|0|7|
+Improved Chain Heal|1|7|
+Nature's Blessing|2|7|
+Ancestral Awakening|0|8|
+Earth Shield|1|8|
+Improved Earth Shield|2|8|
+Tidal Waves|1|9|
+Riptide|1|10|
+	Warlock|Affliction|
+Improved Curse of Agony|0|0|
+Suppression|1|0|
+Improved Corruption|2|0|
+Improved Curse of Weakness|0|1|
+Improved Drain Soul|1|1|
+Improved Life Tap|2|1|
+Soul Siphon|3|1|
+Improved Fear|0|2|
+Fel Concentration|1|2|
+Amplify Curse|2|2|
+Grim Reach|0|3|
+Nightfall|1|3|
+Empowered Corruption|3|3|
+Shadow Embrace|0|4|
+Siphon Life|1|4|
+Curse of Exhaustion|2|4|
+Improved Felhunter|0|5|
+Shadow Mastery|1|5|
+Eradication|0|6|
+Contagion|1|6|
+Dark Pact|2|6|
+Improved Howl of Terror|0|7|
+Malediction|2|7|
+Death's Embrace|0|8|
+Unstable Affliction|1|8|
+Pandemic|2|8|
+Everlasting Affliction|1|9|
+Haunt|1|10|
+	Warlock|Demonology|
+Improved Healthstone|0|0|
+Improved Imp|1|0|
+Demonic Embrace|2|0|
+Fel Synergy|3|0|
+Improved Health Funnel|0|1|
+Demonic Brutality|1|1|
+Fel Vitality|2|1|
+Improved Succubus|0|2|
+Soul Link|1|2|
+Fel Domination|2|2|
+Demonic Aegis|3|2|
+Unholy Power|1|3|
+Master Summoner|2|3|
+Mana Feed|0|4|
+Master Conjuror|2|4|
+Master Demonologist|1|5|
+Molten Core|2|5|
+Demonic Resilience|0|6|
+Demonic Empowerment|1|6|
+Demonic Knowledge|2|6|
+Demonic Tactics|1|7|
+Decimation|2|7|
+Improved Demonic Tactics|0|8|
+Summon Felguard|1|8|
+Nemesis|2|8|
+Demonic Pact|1|9|
+Metamorphosis|1|10|
+	Warlock|Destruction|
+Improved Shadow Bolt|1|0|
+Bane|2|0|
+Aftermath|0|1|
+Molten Skin|1|1|
+Cataclysm|2|1|
+Demonic Power|0|2|
+Shadowburn|1|2|
+Ruin|2|2|
+Intensity|0|3|
+Destructive Reach|1|3|
+Improved Searing Pain|3|3|
+Backlash|0|4|
+Improved Immolate|1|4|
+Devastation|2|4|
+Nether Protection|0|5|
+Emberstorm|2|5|
+Conflagrate|1|6|
+Soul Leech|2|6|
+Pyroclasm|3|6|
+Shadow and Flame|1|7|
+Improved Soul Leech|2|7|
+Backdraft|0|8|
+Shadowfury|1|8|
+Empowered Imp|2|8|
+Fire and Brimstone|1|9|
+Chaos Bolt|1|10|
+	Warrior|Arms|
+Improved Heroic Strike|0|0|
+Deflection|1|0|
+Improved Rend|2|0|
+Improved Charge|0|1|
+Iron Will|1|1|
+Tactical Mastery|2|1|
+Improved Overpower|0|2|
+Anger Management|1|2|
+Impale|2|2|
+Deep Wounds|3|2|
+Two-Handed Weapon Specialization|1|3|
+Taste for Blood|2|3|
+Poleaxe Specialization|0|4|
+Sweeping Strikes|1|4|
+Mace Specialization|2|4|
+Sword Specialization|3|4|
+Weapon Mastery|0|5|
+Improved Hamstring|2|5|
+Trauma|3|5|
+Second Wind|0|6|
+Mortal Strike|1|6|
+Strength of Arms|2|6|
+Improved Slam|3|6|
+Juggernaut|0|7|
+Improved Mortal Strike|1|7|
+Unrelenting Assault|2|7|
+Sudden Death|0|8|
+Endless Rage|1|8|
+Blood Frenzy|2|8|
+Wrecking Crew|1|9|
+Bladestorm|1|10|
+	Warrior|Fury|
+Armored to the Teeth|0|0|
+Booming Voice|1|0|
+Cruelty|2|0|
+Improved Victory Rush|1|1|
+Unbridled Wrath|2|1|
+Improved Cleave|0|2|
+Piercing Howl|1|2|
+Blood Craze|2|2|
+Commanding Presence|3|2|
+Dual Wield Specialization|0|3|
+Improved Execute|1|3|
+Enrage|2|3|
+Precision|0|4|
+Death Wish|1|4|
+Improved Intercept|2|4|
+Improved Berserker Rage|0|5|
+Flurry|2|5|
+Intensify Rage|0|6|
+Bloodthirst|1|6|
+Improved Whirlwind|3|6|
+Furious Attacks|0|7|
+Improved Berserker Stance|3|7|
+Heroic Fury|0|8|
+Rampage|1|8|
+Bloodsurge|2|8|
+Unending Fury|1|9|
+Titan's Grip|1|10|
+Single-Minded Fury|2|10|
+	Warrior|Protection|
+Improved Bloodrage|0|0|
+Shield Specialization|1|0|
+Improved Thunder Clap|2|0|
+Incite|1|1|
+Anticipation|2|1|
+Last Stand|0|2|
+Improved Revenge|1|2|
+Shield Mastery|2|2|
+Toughness|3|2|
+Improved Spell Reflection|0|3|
+Improved Disarm|1|3|
+Puncture|2|3|
+Improved Disciplines|0|4|
+Concussion Blow|1|4|
+Gag Order|2|4|
+One-Handed Weapon Specialization|2|5|
+Improved Defensive Stance|0|6|
+Vigilance|1|6|
+Focused Rage|2|6|
+Vitality|1|7|
+Safeguard|2|7|
+Warbringer|0|8|
+Devastate|1|8|
+Critical Block|2|8|
+Sword and Board|1|9|
+Damage Shield|2|9|
+Shockwave|1|10|
