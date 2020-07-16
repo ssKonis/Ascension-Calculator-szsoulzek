@@ -1,0 +1,37 @@
+E:\Dropbox\Source Code\Ascension Calculator\bin\Release\Ascension Calculator.exe.config
+E:\Dropbox\Source Code\Ascension Calculator\obj\Release\Ascension_Calculator.Form1.resources
+E:\Dropbox\Source Code\Ascension Calculator\obj\Release\Ascension_Calculator.HelpDlg.resources
+E:\Dropbox\Source Code\Ascension Calculator\obj\Release\Ascension_Calculator.OptionsDlg.resources
+E:\Dropbox\Source Code\Ascension Calculator\obj\Release\Ascension_Calculator.Properties.Resources.resources
+E:\Dropbox\Source Code\Ascension Calculator\obj\Release\Ascension Calculator.csproj.GenerateResource.Cache
+E:\Dropbox\Source Code\Ascension Calculator\bin\Release\Ascension Calculator.exe
+E:\Dropbox\Source Code\Ascension Calculator\bin\Release\Ascension Calculator.pdb
+E:\Dropbox\Source Code\Ascension Calculator\bin\Release\ObjectListView.dll
+E:\Dropbox\Source Code\Ascension Calculator\obj\Release\Ascension_Calculator.ImportDlg.resources
+E:\Dropbox\Source Code\Ascension Calculator\obj\Release\Ascension Calculator.exe
+E:\Dropbox\Source Code\Ascension Calculator\obj\Release\Ascension Calculator.pdb
+E:\Dropbox\Source Code\Ascension Calculator\obj\Release\Ascension Calculator.csprojResolveAssemblyReference.cache
+E:\Dropbox\Source Code\Ascension Calculator\obj\Release\Ascension_Calculator.SkillsGeneratedDlg.resources
+E:\Dropbox\Source Code\Ascension Calculator\obj\Release\Ascension_Calculator.View.CustomDatabase.resources
+C:\Users\sskon\Documents\GitHub\Ascension Calculator - szsoulzek\bin\Release\Ascension Calculator.exe.config
+C:\Users\sskon\Documents\GitHub\Ascension Calculator - szsoulzek\bin\Release\Ascension Calculator.exe
+C:\Users\sskon\Documents\GitHub\Ascension Calculator - szsoulzek\bin\Release\Ascension Calculator.pdb
+C:\Users\sskon\Documents\GitHub\Ascension Calculator - szsoulzek\bin\Release\ObjectListView.dll
+C:\Users\sskon\Documents\GitHub\Ascension Calculator - szsoulzek\obj\Release\Ascension_Calculator.View.CustomDatabase.resources
+C:\Users\sskon\Documents\GitHub\Ascension Calculator - szsoulzek\obj\Release\Ascension_Calculator.Form1.resources
+C:\Users\sskon\Documents\GitHub\Ascension Calculator - szsoulzek\obj\Release\Ascension_Calculator.HelpDlg.resources
+C:\Users\sskon\Documents\GitHub\Ascension Calculator - szsoulzek\obj\Release\Ascension_Calculator.ImportDlg.resources
+C:\Users\sskon\Documents\GitHub\Ascension Calculator - szsoulzek\obj\Release\Ascension_Calculator.OptionsDlg.resources
+C:\Users\sskon\Documents\GitHub\Ascension Calculator - szsoulzek\obj\Release\Ascension_Calculator.Properties.Resources.resources
+C:\Users\sskon\Documents\GitHub\Ascension Calculator - szsoulzek\obj\Release\Ascension_Calculator.SkillsGeneratedDlg.resources
+C:\Users\sskon\Documents\GitHub\Ascension Calculator - szsoulzek\obj\Release\Ascension Calculator.csproj.GenerateResource.cache
+C:\Users\sskon\Documents\GitHub\Ascension Calculator - szsoulzek\obj\Release\Ascension Calculator.csproj.CoreCompileInputs.cache
+C:\Users\sskon\Documents\GitHub\Ascension Calculator - szsoulzek\obj\Release\Ascension Calculator.csproj.CopyComplete
+C:\Users\sskon\Documents\GitHub\Ascension Calculator - szsoulzek\obj\Release\Ascension Calculator.exe
+C:\Users\sskon\Documents\GitHub\Ascension Calculator - szsoulzek\obj\Release\Ascension Calculator.pdb
+C:\Users\sskon\Documents\GitHub\Ascension Calculator - szsoulzek\bin\Release\Ascension Calculator.exe.manifest
+C:\Users\sskon\Documents\GitHub\Ascension Calculator - szsoulzek\bin\Release\Ascension Calculator.application
+C:\Users\sskon\Documents\GitHub\Ascension Calculator - szsoulzek\obj\Release\Ascension Calculator.csprojAssemblyReference.cache
+C:\Users\sskon\Documents\GitHub\Ascension Calculator - szsoulzek\obj\Release\Ascension Calculator.TrustInfo.xml
+C:\Users\sskon\Documents\GitHub\Ascension Calculator - szsoulzek\obj\Release\Ascension Calculator.exe.manifest
+C:\Users\sskon\Documents\GitHub\Ascension Calculator - szsoulzek\obj\Release\Ascension Calculator.application
