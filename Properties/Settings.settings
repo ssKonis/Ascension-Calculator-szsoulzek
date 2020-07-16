@@ -1,0 +1,27 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Ascension_Calculator.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="OPTIONS_DISPLAYPANELBACKGROUNDS" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="OPTIONS_CHECKFORUPDATES" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="OPTIONS_SHOWLISTGROUPS" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="OPTIONS_EXPORTGRADIENTLEFT" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">90, 90, 90</Value>
+    </Setting>
+    <Setting Name="OPTIONS_EXPORTGRADIENTRIGHT" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">16, 16, 16</Value>
+    </Setting>
+    <Setting Name="OPTIONS_EXPORTBACKGROUND" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="OPTIONS_PANELSTALENTSABILITIES" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,0 +1,7 @@
+-make export image have more width for each X (5?) amount of classtags populated
+-update database on release based on calculator topic posts
+
+-make classtag panel (and investments) less hardcoded and more dynamic based on database classtags
+	-implement death knight colors and images
+	-change beastmastery to beast mastery spec EVERYWHERE (including database if not alrdy)
+-add talent rank dynamic values to database, skills, and tooltips

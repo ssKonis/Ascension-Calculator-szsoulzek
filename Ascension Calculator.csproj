@@ -1,0 +1,2479 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{116D4353-E0D7-40D9-9A2E-3092495FD961}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ascension_Calculator</RootNamespace>
+    <AssemblyName>Ascension Calculator</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>E:\Games\WoW\Wotlk\Ascension Class Builder tool\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>3.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>logo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>83648474BA6F9A537157D62D8EBAB23890A302CD</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Ascension Calculator_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ObjectListView, Version=2.9.1.42669, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Data\ObjectListView.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="View\AbilityPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Model\Eventable.cs" />
+    <Compile Include="View\AvailableListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\CustomDatabase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\CustomDatabase.Designer.cs">
+      <DependentUpon>CustomDatabase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\EZToolTip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\GFXPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Model\Data.cs" />
+    <Compile Include="View\HelpDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\HelpDlg.Designer.cs">
+      <DependentUpon>HelpDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Platform\IOManager.cs" />
+    <Compile Include="Model\Options.cs" />
+    <Compile Include="View\ImportDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ImportDlg.Designer.cs">
+      <DependentUpon>ImportDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\LearnedListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\OptionsDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\OptionsDlg.Designer.cs">
+      <DependentUpon>OptionsDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Model\Skill.cs" />
+    <Compile Include="View\SkillListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\SkillPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\SkillsGeneratedDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\SkillsGeneratedDlg.Designer.cs">
+      <DependentUpon>SkillsGeneratedDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\SkillTooltip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\TalentPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\UITools.cs" />
+    <Compile Include="Platform\VersionChecker.cs" />
+    <EmbeddedResource Include="View\CustomDatabase.resx">
+      <DependentUpon>CustomDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\HelpDlg.resx">
+      <DependentUpon>HelpDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ImportDlg.resx">
+      <DependentUpon>ImportDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\OptionsDlg.resx">
+      <DependentUpon>OptionsDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="View\SkillsGeneratedDlg.resx">
+      <DependentUpon>SkillsGeneratedDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Ascension Calculator_TemporaryKey.pfx" />
+    <None Include="Data\hues\hue_red.png" />
+    <None Include="Data\hues\icon_border.png" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\ae.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\te.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_ambush.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_backstab.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_bullrush.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_cheapshot.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_creature_disease_03.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_creature_poison_06.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_criticalstrike.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_defend.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_devour.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_druid_aquaticform.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_druid_balanceofpower.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_druid_bash.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_druid_berserk.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_druid_catform.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_druid_challangingroar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_druid_cower.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_druid_dash.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_druid_demoralizingroar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_druid_disembowel.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_druid_dreamstate.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_druid_earthandsky.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_druid_eclipse.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_druid_empoweredrejuvination.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_druid_empoweredtouch.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_druid_enrage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_druid_ferociousbite.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_druid_flourish.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_druid_forceofnature.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_druid_galewinds.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_druid_giftoftheearthmother.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_druid_healinginstincts.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_druid_improvedmoonkinform.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_druid_improvedtreeform.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_druid_infectedwound.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_druid_kingofthejungle.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_druid_lunarguidance.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_druid_manatree.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_druid_mangle2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_druid_mastershapeshifter.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_druid_maul.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_druid_naturalperfection.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_druid_owlkinfrenzy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_druid_predatoryinstincts.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_druid_primalagression.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_druid_primalprecision.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_druid_primaltenacity.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_druid_rake.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_druid_ravage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_druid_replenish.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_druid_starfall.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_druid_supriseattack.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_druid_tigersroar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_druid_travelform.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_druid_treeoflife.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_druid_twilightswrath.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_druid_typhoon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_dualwield.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_dualwieldspecialization.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_ensnare.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_eyeoftheowl.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_fiegndead.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_ghoulfrenzy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_golemstormbolt.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_golemthunderclap.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_gouge.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_heroicleap.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_hibernation.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_hunter_aimedshot.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_hunter_animalhandler.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_hunter_aspectmastery.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_hunter_aspectofthemonkey.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_hunter_aspectoftheviper.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_hunter_assassinate.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_hunter_beastcall.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_hunter_beastmastery.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_hunter_beastsoothe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_hunter_beasttaming.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_hunter_beasttraining.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_hunter_beastwithin.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_hunter_catlikereflexes.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_hunter_chimerashot2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_hunter_cobrastrikes.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_hunter_combatexperience.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_hunter_criticalshot.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_hunter_eagleeye.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_hunter_explosiveshot.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_hunter_ferociousinspiration.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_hunter_focusedaim.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_hunter_goforthethroat.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_hunter_harass.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_hunter_huntervswild.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_hunter_huntingparty.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_hunter_improvedsteadyshot.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_hunter_improvedtracking.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_hunter_invigeration.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_hunter_lockandload.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_hunter_longevity.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_hunter_longshots.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_hunter_mastermarksman.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_hunter_mastertactitian.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_hunter_mendpet.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_hunter_pet_bear.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_hunter_pet_cat.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_hunter_pet_hyena.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_hunter_piercingshots.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_hunter_pointofnoescape.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_hunter_potentvenom.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_hunter_quickshot.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_hunter_rapidkilling.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_hunter_rapidregeneration.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_hunter_readiness.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_hunter_resourcefulness.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_hunter_runningshot.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_hunter_separationanxiety.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_hunter_serpentswiftness.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_hunter_silenthunter.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_hunter_snipershot.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_hunter_steadyshot.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_hunter_survivalinstincts.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_hunter_swiftstrike.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_hunter_thrillofthehunt.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_hunter_wildquiver.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_hunter_zenarchery.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_impalingbolt.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_kick.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_mage_arcanebarrage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_mage_brainfreeze.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_mage_burnout.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_mage_chilledtothebone.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_mage_coldasice.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_mage_deepfreeze.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_mage_fierypayback.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_mage_firestarter.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_mage_hotstreak.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_mage_incantersabsorbtion.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_mage_livingbomb.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_mage_missilebarrage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_mage_moltenarmor.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_mage_netherwindpresence.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_mage_potentspirit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_mage_shattershield.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_mage_studentofthemind.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_mage_tormentoftheweak.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_mage_wintersgrasp.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_mage_worldinflames.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_marksmanship.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_meleedamage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_mount_jungletiger.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_mount_pinktiger.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_mount_whitetiger.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_paladin_artofwar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_paladin_beaconoflight.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_paladin_blessedhands.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_paladin_divinestorm.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_paladin_enlightenedjudgements.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_paladin_gaurdedbythelight.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_paladin_hammeroftherighteous.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_paladin_infusionoflight.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_paladin_judgementblue.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_paladin_judgementofthepure.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_paladin_judgementofthewise.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_paladin_judgementred.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_paladin_judgementsofthejust.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_paladin_righteousvengeance.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_paladin_sacredcleansing.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_paladin_sanctifiedwrath.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_paladin_sheathoflight.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_paladin_shieldofthetemplar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_paladin_swiftretribution.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_paladin_touchedbylight.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_parry.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_physical_taunt.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_piercedamage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_poisons.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_racial_avatar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_racial_bearform.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_racial_bloodrage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_racial_cannibalize.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_rogue_ambush.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_rogue_bladetwisting.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_rogue_bloodsplatter.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_rogue_cheatdeath.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_rogue_cuttothechase.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_rogue_deadenednerves.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_rogue_deadlybrew.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_rogue_distract.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_rogue_envelopingshadows.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_rogue_eviscerate.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_rogue_feigndeath.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_rogue_feint.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_rogue_findweakness.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_rogue_fleetfooted.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_rogue_focusedattacks.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_rogue_garrote.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_rogue_honoramongstthieves.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_rogue_hungerforblood.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_rogue_kidneyshot.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_rogue_masterofsubtlety.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_rogue_murderspree.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_rogue_nervesofsteel.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_rogue_preyontheweak.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_rogue_quickrecovery.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_rogue_rupture.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_rogue_shadowdance.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_rogue_shadowstep.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_rogue_shadowstrikes.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_rogue_sinistercalling.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_rogue_slaughterfromtheshadows.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_rogue_slicedice.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_rogue_sprint.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_rogue_surpriseattack.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_rogue_throwingspecialization.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_rogue_trip.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_rogue_turnthetables.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_rogue_unfairadvantage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_rogue_waylay.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_rogue_wrongfullyaccused.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_sap.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_searingarrow.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_shaman_cleansespirit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_shaman_lavalash.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_shaman_stormstrike.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_shaman_watershield.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_shockwave.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_spy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_stealth.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_theblackarrow.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_thunderbolt.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_thunderclap.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_townwatch.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_tracking.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_trueshot.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_upgrademoonglaive.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_vanish.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_warlock_backdraft.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_warlock_chaosbolt.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_warlock_demonicempowerment.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_warlock_empoweredimp.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_warlock_eradication.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_warlock_everlastingaffliction.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_warlock_fireandbrimstone.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_warlock_haunt.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_warlock_improveddemonictactics.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_warlock_improvedsoulleech.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_warlock_moltencore.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_warrior_battleshout.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_warrior_bladestorm.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_warrior_bloodfrenzy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_warrior_bloodnova.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_warrior_bloodsurge.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_warrior_bullrush.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_warrior_challange.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_warrior_charge.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_warrior_cleave.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_warrior_criticalblock.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_warrior_decisivestrike.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_warrior_defensivestance.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_warrior_devastate.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_warrior_disarm.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_warrior_endlessrage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_warrior_focusedrage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_warrior_furiousresolve.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_warrior_improveddisciplines.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_warrior_incite.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_warrior_innerrage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_warrior_intensifyrage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_warrior_offensivestance.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_warrior_punishingblow.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_warrior_rampage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_warrior_revenge.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_warrior_riposte.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_warrior_safeguard.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_warrior_savageblow.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_warrior_shieldbash.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_warrior_shieldmastery.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_warrior_shieldreflection.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_warrior_shieldwall.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_warrior_shockwave.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_warrior_sunder.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_warrior_swordandboard.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_warrior_titansgrip.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_warrior_trauma.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_warrior_unrelentingassault.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_warrior_vigilance.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_warrior_warbringer.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_warrior_warcry.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_warrior_weaponmastery.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\ability_whirlwind.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\general.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\inv_ammo_firetar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\inv_axe_06.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\inv_axe_09.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\inv_drink_06.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\inv_enchant_essenceeternallarge.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\inv_feather_01.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\inv_gauntlets_04.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\inv_hammer_04.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\inv_helmet_21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\inv_mace_01.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\inv_misc_bag_11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\inv_misc_bomb_05.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\inv_misc_food_10.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\inv_misc_gem_emerald_01.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\inv_misc_gem_sapphire_01.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\inv_misc_head_dragon_01.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\inv_misc_monsterclaw_03.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\inv_misc_monsterclaw_04.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\inv_misc_pelt_bear_03.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\inv_relics_idolofrejuvenation.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\inv_shield_05.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\inv_shield_06.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\inv_shield_31.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\inv_shoulder_22.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\inv_shoulder_37.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\inv_spear_02.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\inv_spear_04.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\inv_spear_07.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\inv_staff_01.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\inv_staff_20.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\inv_stone_04.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\inv_sword_05.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\inv_sword_11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\inv_sword_17.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\inv_sword_20.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\inv_sword_27.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\inv_sword_48.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\inv_weapon_crossbow_11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\inv_weapon_rifle_06.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\inv_weapon_shortblade_05.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\inv_weapon_shortblade_38.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_arcane_arcane03.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_arcane_arcanepotency.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_arcane_arcaneresilience.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_arcane_arcanetorrent.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_arcane_blink.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_arcane_focusedpower.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_arcane_mindmastery.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_arcane_portalstormwind.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_arcane_prismaticcloak.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_arcane_starfire.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_arcane_studentofmagic.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_arcane_teleportmoonglade.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_fire_bluecano.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_fire_blueflamering.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_fire_burningspeed.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_fire_burnout.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_fire_elementaldevastation.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_fire_fire.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_fire_firearmor.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_fire_fireball.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_fire_fireball02.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_fire_firebolt.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_fire_flamebolt.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_fire_flameshock.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_fire_flametounge.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_fire_flare.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_fire_immolation.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_fire_incinerate.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_fire_lavaspawn.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_fire_masterofelements.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_fire_meteorstorm.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_fire_moltenblood.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_fire_playingwithfire.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_fire_sealoffire.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_fire_searingtotem.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_fire_selfdestruct.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_fire_soulburn.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_fire_totemofwrath.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_fire_volcano.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_fire_windsofwoe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_fireresistancetotem_01.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_frost_arcticwinds.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_frost_chainsofice.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_frost_chillingblast.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_frost_coldhearted.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_frost_freezingbreath.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_frost_frost.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_frost_frostarmor.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_frost_frostarmor02.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_frost_frostbolt.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_frost_frostbolt02.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_frost_frostbrand.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_frost_frostnova.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_frost_frostshock.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_frost_frostward.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_frost_frozencore.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_frost_glacier.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_frost_icefloes.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_frost_iceshard.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_frost_iceshock.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_frost_icestorm.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_frost_manarecharge.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_frost_stun.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_frost_summonwaterelemental.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_frost_summonwaterelemental_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_frost_windwalkon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_frost_wisp.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_frost_wizardmark.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_frostresistancetotem_01.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_absolution.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_ardentdefender.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_ashestoashes.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_aspiration.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_auramastery.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_auraoflight.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_avengersshield.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_blessedlife.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_blessedrecovery.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_blessedresillience.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_blessingofagility.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_blessingofprotection.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_blessingofstamina.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_blessingofstrength.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_blindingheal.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_borrowedtime.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_chastise.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_circleofrenewal.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_crusade.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_crusaderstrike.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_devineaegis.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_devotion.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_devotionaura.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_dispelmagic.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_divineillumination.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_divineintervention.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_divineprovidence.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_divinepurpose.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_divinespirit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_elunesgrace.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_excorcism.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_excorcism_02.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_eyeforaneye.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_fanaticism.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_fistofjustice.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_flashheal.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_greaterheal.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_guardianspirit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_heal.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_heal02.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_healingaura.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_healingfocus.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_holybolt.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_holyguidance.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_holynova.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_holyprotection.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_holysmite.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_hopeandgrace.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_innerfire.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_layonhands.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_lesserheal.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_lightsgrace.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_magicalsentry.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_mindsooth.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_mindvision.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_nullifydisease.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_painsupression.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_penance.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_persuitofjustice.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_power.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_powerinfusion.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_powerwordbarrier.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_powerwordshield.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_prayerofhealing.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_prayerofhealing02.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_pureofheart.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_purify.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_purifyingpower.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_rapture.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_removecurse.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_renew.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_restoration.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_resurrection.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_retributionaura.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_revivechampion.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_righteousfury.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_righteousnessaura.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_sealoffury.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_sealofmight.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_sealofprotection.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_sealofsacrifice.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_sealofsalvation.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_sealofvalor.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_sealofvengeance.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_sealofwisdom.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_sealofwrath.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_searinglight.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_searinglightpriest.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_senseundead.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_serendipity.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_spellwarding.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_spiritualguidence.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_stoicism.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_summonlightwell.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_surgeoflight.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_symbolofhope.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_testoffaith.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_turnundead.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_unyieldingfaith.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_vindication.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_weaponmastery.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_holy_wordfortitude.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_ice_lament.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_ice_magicdamage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_lightning_lightningbolt01.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_magearmor.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_magic_featherfall.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_magic_lesserinvisibilty.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_magic_magearmor.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_nature_abolishmagic.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_nature_ancestralguardian.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_nature_astralrecal.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_nature_astralrecalgroup.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_nature_bloodlust.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_nature_callstorm.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_nature_chainlightning.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_nature_crystalball.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_nature_cyclone.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_nature_diseasecleansingtotem.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_nature_drowsy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_nature_earthbindtotem.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_nature_earthelemental_totem.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_nature_earthshock.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_nature_elementalabsorption.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_nature_elementalprecision_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_nature_enchantarmor.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_nature_faeriefire.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_nature_farsight.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_nature_focusedmind.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_nature_forceofnature.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_nature_giftofthewaterspirit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_nature_groundingtotem.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_nature_guardianward.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_nature_healingtouch.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_nature_healingwavegreater.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_nature_healingwavelesser.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_nature_healingway.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_nature_insectswarm.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_nature_invisibilty.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_nature_lightning.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_nature_lightningoverload.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_nature_lightningshield.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_nature_magicimmunity.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_nature_manaregentotem.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_nature_mentalquickness.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_nature_mirrorimage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_nature_moonglow.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_nature_moonkey.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_nature_natureblessing.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_nature_natureguardian.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_nature_natureresistancetotem.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_nature_naturesblessing.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_nature_natureswrath.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_nature_naturetouchgrow.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_nature_nullifydisease.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_nature_nullifypoison.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_nature_nullifypoison_02.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_nature_polymorph.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_nature_protectionformnature.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_nature_purge.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_nature_ravenform.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_nature_regenerate.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_nature_regeneration.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_nature_reincarnation.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_nature_rejuvenation.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_nature_removecurse.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_nature_resistnature.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_nature_riptide.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_nature_rockbiter.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_nature_sentinal.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_nature_shamanrage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_nature_skinofearth.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_nature_sleep.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_nature_slow.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_nature_spiritarmor.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_nature_spiritwolf.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_nature_starfall.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_nature_stoneclawtotem.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_nature_stoneskintotem.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_nature_stormreach.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_nature_stranglevines.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_nature_strengthofearthtotem02.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_nature_thorns.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_nature_thunderclap.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_nature_timestop.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_nature_tranquility.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_nature_tremortotem.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_nature_undyingstrength.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_nature_unleashedrage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_nature_unrelentingstorm.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_nature_unyeildingstamina.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_nature_windfury.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_nature_wispheal.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_nature_wispsplode.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_abominationexplosion.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_antimagicshell.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_antishadow.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_auraofdarkness.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_blackplague.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_burningspirit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_callofbone.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_charm.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_chilltouch.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_contagion.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_corpseexplode.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_cripple.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_curse.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_curseofachimonde.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_curseofmannoroth.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_curseofsargeras.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_curseoftounges.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_darkritual.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_darksummoning.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_deathcoil.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_deathpact.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_deathscream.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_deathsembrace.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_demonbreath.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_demonform.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_demonicempathy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_demonicfortitude.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_demonicpact.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_demonictactics.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_detectlesserinvisibility.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_devouringplague.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_dispersion.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_enslavedemon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_evileye.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_felmending.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_fingerofdeath.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_focusedpower.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_fumble.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_gathershadows.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_grimward.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_haunting.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_impphaseshift.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_improvedvampiricembrace.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_lifedrain.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_lifedrain02.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_manaburn.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_manafeed.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_metamorphosis.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_mindsteal.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_mindtwisting.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_misery.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_netherprotection.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_painandsuffering.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_painfulafflictions.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_painspike.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_possession.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_psychichorrors.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_psychicscream.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_ragingscream.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_rainoffire.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_requiem.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_ritualofsacrifice.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_scourgebuild.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_sealofkings.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_shadetruesight.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_shadowandflame.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_shadowbolt.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_shadowembrace.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_shadowform.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_shadowfury.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_shadowpact.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_shadowpower.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_shadowward.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_shadowworddominate.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_shadowwordpain.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_siphonmana.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_skull.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_soulgem.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_soulleech_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_soulleech_3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_summonfelguard.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_summonfelhunter.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_summonimp.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_summoninfernal.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_summonsuccubus.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_summonvoidwalker.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_teleport.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_twilight.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_unholyfrenzy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_unstableaffliction_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_unstableaffliction_3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_unsummonbuilding.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shadow_vampiricaura.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shaman_ancestralawakening.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shaman_astralshift.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shaman_blessingofeternals.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shaman_dropall_01.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shaman_dropall_02.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shaman_dropall_03.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shaman_earthlivingweapon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shaman_elementaloath.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shaman_feralspirit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shaman_improvedstormstrike.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shaman_lavaflow.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shaman_maelstromweapon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shaman_staticshock.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shaman_stormearthfire.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shaman_thunderstorm.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shaman_tidalwaves.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_shaman_totemrecall.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\spell_unused2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\icons\trade_brewpoison.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\classtags\classtag_druid_balance.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\classtags\classtag_druid_balance_selected.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\classtags\background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\backgrounds\background_Druid_Balance.jpg" />
+    <None Include="Data\backgrounds\background_Shaman_Elemental.jpg" />
+    <None Include="Data\backgrounds\background_Shaman_Restoration.jpg" />
+    <None Include="Data\backgrounds\background_Warlock_Destruction.jpg" />
+    <None Include="Data\backgrounds\background_Druid_Restoration.jpg" />
+    <None Include="Data\backgrounds\background_Mage_Arcane.jpg" />
+    <None Include="Data\backgrounds\background_Mage_Fire.jpg" />
+    <None Include="Data\backgrounds\background_Mage_Frost.jpg" />
+    <None Include="Data\backgrounds\background_Warlock_Affliction.jpg" />
+    <None Include="Data\backgrounds\background_Rogue_Subtlety.jpg" />
+    <None Include="Data\backgrounds\background_Shaman_Enhancement.jpg" />
+    <None Include="Data\backgrounds\background_Warlock_Demonology.jpg" />
+    <None Include="Data\backgrounds\background_Warrior_Arms.jpg" />
+    <None Include="Data\backgrounds\background_Warrior_Fury.jpg" />
+    <None Include="Data\backgrounds\background_Warrior_Protection.jpg" />
+    <None Include="Data\backgrounds\background_Druid_Feral.jpg" />
+    <None Include="Data\backgrounds\background_General_General.jpg" />
+    <None Include="Data\backgrounds\background_Hunter_BeastMastery.jpg" />
+    <None Include="Data\backgrounds\background_Hunter_Marksmanship.jpg" />
+    <None Include="Data\backgrounds\background_Hunter_Survival.jpg" />
+    <None Include="Data\backgrounds\background_Paladin_Holy.jpg" />
+    <None Include="Data\backgrounds\background_Paladin_Protection.jpg" />
+    <None Include="Data\backgrounds\background_Paladin_Retribution.jpg" />
+    <None Include="Data\backgrounds\background_Priest_Discipline.jpg" />
+    <None Include="Data\backgrounds\background_Priest_Holy.jpg" />
+    <None Include="Data\backgrounds\background_Priest_Shadow.jpg" />
+    <None Include="Data\backgrounds\background_Rogue_Assassination.jpg" />
+    <None Include="Data\backgrounds\background_Rogue_Combat.jpg" />
+    <None Include="Data\database.txt" />
+    <None Include="Data\backgrounds\background_rank.png" />
+    <None Include="Data\classtags\classtag_druid_balance.png" />
+    <None Include="Data\classtags\classtag_warrior_fury.png" />
+    <None Include="Data\classtags\classtag_warrior_fury_selected.png" />
+    <None Include="Data\classtags\classtag_warrior_protection.png" />
+    <None Include="Data\classtags\classtag_warrior_protection_selected.png" />
+    <None Include="Data\classtags\classtag_druid_balance_selected.png" />
+    <None Include="Data\classtags\classtag_druid_feral.png" />
+    <None Include="Data\classtags\classtag_druid_feral_selected.png" />
+    <None Include="Data\classtags\classtag_druid_restoration.png" />
+    <None Include="Data\classtags\classtag_druid_restoration_selected.png" />
+    <None Include="Data\classtags\classtag_general.png" />
+    <None Include="Data\classtags\classtag_general_selected.png" />
+    <None Include="Data\classtags\classtag_hunter_beastmastery.png" />
+    <None Include="Data\classtags\classtag_hunter_beastmastery_selected.png" />
+    <None Include="Data\classtags\classtag_hunter_marksmanship.png" />
+    <None Include="Data\classtags\classtag_hunter_marksmanship_selected.png" />
+    <None Include="Data\classtags\classtag_hunter_survival.png" />
+    <None Include="Data\classtags\classtag_hunter_survival_selected.png" />
+    <None Include="Data\classtags\classtag_mage_arcane.png" />
+    <None Include="Data\classtags\classtag_mage_arcane_selected.png" />
+    <None Include="Data\classtags\classtag_mage_fire.png" />
+    <None Include="Data\classtags\classtag_mage_fire_selected.png" />
+    <None Include="Data\classtags\classtag_mage_frost.png" />
+    <None Include="Data\classtags\classtag_mage_frost_selected.png" />
+    <None Include="Data\classtags\classtag_paladin_holy.png" />
+    <None Include="Data\classtags\classtag_paladin_holy_selected.png" />
+    <None Include="Data\classtags\classtag_paladin_protection.png" />
+    <None Include="Data\classtags\classtag_paladin_protection_selected.png" />
+    <None Include="Data\classtags\classtag_paladin_retribution.png" />
+    <None Include="Data\classtags\classtag_paladin_retribution_selected.png" />
+    <None Include="Data\classtags\classtag_priest_discipline.png" />
+    <None Include="Data\classtags\classtag_priest_discipline_selected.png" />
+    <None Include="Data\classtags\classtag_priest_holy.png" />
+    <None Include="Data\classtags\classtag_priest_holy_selected.png" />
+    <None Include="Data\classtags\classtag_priest_shadow.png" />
+    <None Include="Data\classtags\classtag_priest_shadow_selected.png" />
+    <None Include="Data\classtags\classtag_rogue_assassination.png" />
+    <None Include="Data\classtags\classtag_rogue_assassination_selected.png" />
+    <None Include="Data\classtags\classtag_rogue_combat.png" />
+    <None Include="Data\classtags\classtag_rogue_combat_selected.png" />
+    <None Include="Data\classtags\classtag_rogue_subtlety.png" />
+    <None Include="Data\classtags\classtag_rogue_subtlety_selected.png" />
+    <None Include="Data\classtags\classtag_shaman_elemental.png" />
+    <None Include="Data\classtags\classtag_shaman_elemental_selected.png" />
+    <None Include="Data\classtags\classtag_shaman_enhancement.png" />
+    <None Include="Data\classtags\classtag_shaman_enhancement_selected.png" />
+    <None Include="Data\classtags\classtag_shaman_restoration.png" />
+    <None Include="Data\classtags\classtag_shaman_restoration_selected.png" />
+    <None Include="Data\classtags\classtag_warlock_affliction.png" />
+    <None Include="Data\classtags\classtag_warlock_affliction_selected.png" />
+    <None Include="Data\classtags\classtag_warlock_demonology.png" />
+    <None Include="Data\classtags\classtag_warlock_demonology_selected.png" />
+    <None Include="Data\classtags\classtag_warlock_destruction.png" />
+    <None Include="Data\classtags\classtag_warlock_destruction_selected.png" />
+    <None Include="Data\classtags\classtag_warrior_arms.png" />
+    <None Include="Data\classtags\classtag_warrior_arms_selected.png" />
+    <None Include="Data\classtags\classtag_General_General.png" />
+    <None Include="Data\classtags\classtag_General_General_selected.png" />
+    <None Include="Data\ObjectListView.dll" />
+    <None Include="Data\letter.jpg" />
+    <None Include="Data\rankup.jpg" />
+    <None Include="Data\level.jpg" />
+    <None Include="Data\hues\hue_green.png" />
+    <None Include="Data\hues\hue_highlight.png" />
+    <None Include="Data\hues\hue_yellow.png" />
+    <None Include="Data\logo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\database.txt" />
+    <None Include="Data\backgrounds\tiled_rock.png" />
+    <None Include="Data\backgrounds\tiled_parchment.png" />
+    <None Include="Data\backgrounds\tiled_marble.png" />
+    <None Include="Data\icons\paladin.gif" />
+    <None Include="Data\icons\priest.gif" />
+    <None Include="Data\icons\rogue.gif" />
+    <None Include="Data\icons\shaman.gif" />
+    <None Include="Data\icons\warlock.gif" />
+    <None Include="Data\icons\warrior.gif" />
+    <None Include="Data\icons\druid.gif" />
+    <None Include="Data\icons\hunter.gif" />
+    <None Include="Data\icons\mage.gif" />
+    <None Include="Data\icons\spell_arcane_massdispel.jpg" />
+    <None Include="Data\icons\ability_warrior_shatteringthrow.jpg" />
+    <Content Include="Data\talent_graph.txt" />
+    <Content Include="logo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

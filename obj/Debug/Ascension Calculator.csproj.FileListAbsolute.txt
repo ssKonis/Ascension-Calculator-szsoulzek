@@ -1,0 +1,42 @@
+C:\Users\Administrator\AppData\Local\Temporary Projects\Ascension Calculator\bin\Debug\Ascension Calculator.exe.config
+C:\Users\Administrator\AppData\Local\Temporary Projects\Ascension Calculator\bin\Debug\Ascension Calculator.exe
+C:\Users\Administrator\AppData\Local\Temporary Projects\Ascension Calculator\bin\Debug\Ascension Calculator.pdb
+C:\Users\Administrator\AppData\Local\Temporary Projects\Ascension Calculator\obj\Debug\Ascension Calculator.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\AppData\Local\Temporary Projects\Ascension Calculator\obj\Debug\Ascension_Calculator.Properties.Resources.resources
+C:\Users\Administrator\AppData\Local\Temporary Projects\Ascension Calculator\obj\Debug\Ascension Calculator.csproj.GenerateResource.Cache
+C:\Users\Administrator\AppData\Local\Temporary Projects\Ascension Calculator\obj\Debug\Ascension Calculator.exe
+C:\Users\Administrator\AppData\Local\Temporary Projects\Ascension Calculator\obj\Debug\Ascension Calculator.pdb
+E:\Dropbox\Source Code\Ascension Calculator\bin\Debug\Ascension Calculator.exe.config
+E:\Dropbox\Source Code\Ascension Calculator\bin\Debug\Ascension Calculator.exe
+E:\Dropbox\Source Code\Ascension Calculator\bin\Debug\Ascension Calculator.pdb
+E:\Dropbox\Source Code\Ascension Calculator\bin\Debug\ObjectListView.dll
+E:\Dropbox\Source Code\Ascension Calculator\obj\Debug\Ascension_Calculator.Form1.resources
+E:\Dropbox\Source Code\Ascension Calculator\obj\Debug\Ascension_Calculator.HelpDlg.resources
+E:\Dropbox\Source Code\Ascension Calculator\obj\Debug\Ascension_Calculator.OptionsDlg.resources
+E:\Dropbox\Source Code\Ascension Calculator\obj\Debug\Ascension_Calculator.Properties.Resources.resources
+E:\Dropbox\Source Code\Ascension Calculator\obj\Debug\Ascension Calculator.csproj.GenerateResource.Cache
+E:\Dropbox\Source Code\Ascension Calculator\obj\Debug\Ascension Calculator.exe
+E:\Dropbox\Source Code\Ascension Calculator\obj\Debug\Ascension Calculator.pdb
+E:\Dropbox\Source Code\Ascension Calculator\obj\Debug\Ascension_Calculator.ImportDlg.resources
+E:\Dropbox\Source Code\Ascension Calculator\obj\Debug\Ascension_Calculator.SkillsGeneratedDlg.resources
+E:\Dropbox\Source Code\Ascension Calculator\obj\Debug\Ascension Calculator.csprojAssemblyReference.cache
+E:\Dropbox\Source Code\Ascension Calculator\obj\Debug\Ascension_Calculator.View.CustomDatabase.resources
+E:\Dropbox\Source Code\Ascension Calculator\obj\Debug\Ascension Calculator.csproj.CoreCompileInputs.cache
+E:\Dropbox\Source Code\Ascension Calculator\obj\Debug\Ascension Calculator.csproj.CopyComplete
+E:\Dropbox\Source Code\[Ascension Calculator] - Original Project\bin\Debug\Ascension Calculator.exe.config
+E:\Dropbox\Source Code\[Ascension Calculator] - Original Project\bin\Debug\Ascension Calculator.exe
+E:\Dropbox\Source Code\[Ascension Calculator] - Original Project\bin\Debug\Ascension Calculator.pdb
+E:\Dropbox\Source Code\[Ascension Calculator] - Original Project\bin\Debug\ObjectListView.dll
+E:\Dropbox\Source Code\[Ascension Calculator] - Original Project\obj\Debug\Ascension Calculator.csprojAssemblyReference.cache
+E:\Dropbox\Source Code\[Ascension Calculator] - Original Project\obj\Debug\Ascension_Calculator.View.CustomDatabase.resources
+E:\Dropbox\Source Code\[Ascension Calculator] - Original Project\obj\Debug\Ascension_Calculator.Form1.resources
+E:\Dropbox\Source Code\[Ascension Calculator] - Original Project\obj\Debug\Ascension_Calculator.HelpDlg.resources
+E:\Dropbox\Source Code\[Ascension Calculator] - Original Project\obj\Debug\Ascension_Calculator.ImportDlg.resources
+E:\Dropbox\Source Code\[Ascension Calculator] - Original Project\obj\Debug\Ascension_Calculator.OptionsDlg.resources
+E:\Dropbox\Source Code\[Ascension Calculator] - Original Project\obj\Debug\Ascension_Calculator.Properties.Resources.resources
+E:\Dropbox\Source Code\[Ascension Calculator] - Original Project\obj\Debug\Ascension_Calculator.SkillsGeneratedDlg.resources
+E:\Dropbox\Source Code\[Ascension Calculator] - Original Project\obj\Debug\Ascension Calculator.csproj.GenerateResource.cache
+E:\Dropbox\Source Code\[Ascension Calculator] - Original Project\obj\Debug\Ascension Calculator.csproj.CoreCompileInputs.cache
+E:\Dropbox\Source Code\[Ascension Calculator] - Original Project\obj\Debug\Ascension Calculator.csproj.CopyComplete
+E:\Dropbox\Source Code\[Ascension Calculator] - Original Project\obj\Debug\Ascension Calculator.exe
+E:\Dropbox\Source Code\[Ascension Calculator] - Original Project\obj\Debug\Ascension Calculator.pdb
