@@ -1,0 +1,3 @@
+resize 32%
+3 pixels from right text
+no class name
