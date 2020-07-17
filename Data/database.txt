@@ -154,11 +154,11 @@ Swipe (Bear)|Costs Rage\t8 yd range\nInstant\nRequires Bear Form, Dire Bear Form
 
 Faerie Fire (Feral)|30 yd range\nInstant\n6 sec cooldown\nRequires Cat Form, Bear Form, Dire Bear Form\nDecrease the armor of the target by 5% for 5 min.  While affected, the target cannot stealth or turn invisible.  Deals damage and additional threat when used in Bear Form or Dire Bear Form.|spell_nature_faeriefire|18|2|0|Druid|Feral|0|
 
-Claw|Costs Energy\tMelee range\nInstant\nRequires Cat Form\nClaw the enemy, causing additional damage.  Awards 1 combo point.|ability_druid_rake|20|1|0|Druid|Feral|0|
+Claw|Costs Energy\tMelee range\nInstant\nRequires Cat Form\nClaw the enemy, causing additional damage.  Awards 1 combo point.|ability_druid_rake|20|2|0|Druid|Feral|0|
 
 Rip|Costs Energy\tMelee range\nInstant\nRequires Cat Form\nFinishing move that causes damage over time.  Damage increases per combo point and by your attack power.|ability_ghoulfrenzy|20|2|0|Druid|Feral|0|
 
-Cat Form|Costs Mana\tInstant\nShapeshift into cat form, increasing melee attack power by 40 plus Agility.  Also protects the caster from Polymorph effects and allows the use of various cat abilities.\n\nThe act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.\n\nDoes not stack with other bar-changing form skills.|ability_druid_catform|20|2|0|Druid|Feral|0|
+Cat Form|Costs Mana\tInstant\nShapeshift into cat form, increasing melee attack power by 40 plus Agility.  Also protects the caster from Polymorph effects and allows the use of various cat abilities.\n\nThe act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.\n\nDoes not stack with other bar-changing form skills.|ability_druid_catform|20|3|0|Druid|Feral|0|
 
 Prowl|Instant\n10 sec cooldown\nRequires Cat Form\nAllows the Druid to prowl around, but reduces your movement speed by 30%.  Lasts until cancelled.|ability_ambush|20|2|0|Druid|Feral|0|
 
